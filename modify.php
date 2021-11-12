@@ -65,9 +65,23 @@
                     <div class="form-group">
                         <label for="style">Choisir le thème</label>
                         <select name="style" id="style">
-                            <option value="1">Style 1</option>
-                            <option value="2">Style 2</option>
-                            <option value="3">Style d'origine</option>
+                            <?php
+                                if($_COOKIE['style']=="style1.css")
+                                {
+                                    echo '<option value="1" selected>Style 1</option>';
+                                    echo '<option value="2">Style 2</option>';
+                                    echo '<option value="3">Style d\'origine</option>';
+                                }elseif($_COOKIE['style']=="style2.css")
+                                {
+                                    echo '<option value="1">Style 1</option>';
+                                    echo '<option value="2" selected>Style 2</option>';
+                                    echo '<option value="3">Style d\'origine</option>';
+                                }else{
+                                    echo '<option value="1">Style 1</option>';
+                                    echo '<option value="2">Style 2</option>';
+                                    echo '<option value="3" selected>Style d\'origine</option>';
+                                }
+                            ?>
                         </select>
                     </div>
                     <div class="form-group">
