@@ -26,3 +26,7 @@ section{
 .form-group{
     margin: 15px 0;
 }
+
+section a{
+    color: white;
+}

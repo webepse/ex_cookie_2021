@@ -13,7 +13,7 @@
             echo '<link rel="stylesheet" type="text/css" href="style.css">';
         }
     ?>
-    <link rel="stylesheet" type="text/css" href="style.css">
+  
     <title>Document</title>
 </head>
 <body>
@@ -29,6 +29,7 @@
                 if(isset($_COOKIE['nom']))
                 {
                     echo "<h1>Bonjour ".$_COOKIE['nom']."</h1>";
+                    echo '<a href="modify.php">Voulez vous modifier votre thème</a>';
                 }else{
             ?>
                   <div id="form">
